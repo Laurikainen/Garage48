@@ -9,7 +9,7 @@ fetch('https://growby.app/slide',{
 //data on jada 
 
 document.getElementById('reports').innerHTML=
-
+JSON.stringify(data)+
 `	<div class="col-md-4">
 <div class="panel panel-info">
     <div class="panel-heading">Info Panel</div>
