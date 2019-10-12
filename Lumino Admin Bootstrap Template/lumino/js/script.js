@@ -5,9 +5,7 @@ fetch('https://growby.app/slide',{
 .then(r => r.json())
 .then(data => {
 
-    console.log(data);
-    
-//data on jada 
+    console.log(document.getElementsByClass('easypiechart')['data-percent']);
 
 data.forEach(el => {
 
