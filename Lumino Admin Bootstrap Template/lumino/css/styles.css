@@ -912,6 +912,24 @@ h1.page-header {
 #easypiechart-red .percent {
   color: #ef4040; }
 
+#easypiechart-blue2 .percent {
+  color: #30a5ff; }
+
+#easypiechart-teal2 .percent {
+  color: #1ebfae; }
+
+#easypiechart-orange2 .percent {
+  color: #ffb53e; }
+
+#easypiechart-red2 .percent {
+  color: #ef4040; }
+
+#easypiechart-blue3 .percent {
+  color: #30a5ff; }
+
+#easypiechart-orange3 .percent {
+  color: #ffb53e; }
+
 #calendar, .datepicker-inline {
   width: 100%; }
 
