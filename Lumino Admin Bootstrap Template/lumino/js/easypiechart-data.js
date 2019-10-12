@@ -68,3 +68,28 @@ $(function() {
         barColor: '#ffb53e'
     });
 });
+
+$(function() {
+    $('#easypiechart-orange4').easyPieChart({
+        scaleColor: false,
+        barColor: '#ffb53e'
+    });
+});
+$(function() {
+    $('#easypiechart-blue4').easyPieChart({
+        scaleColor: false,
+        barColor: '#30a5ff'
+    });
+});
+$(function() {
+    $('#easypiechart-teal3').easyPieChart({
+        scaleColor: false,
+        barColor: '#1ebfae'
+    });
+});
+$(function() {
+    $('#easypiechart-red3').easyPieChart({
+        scaleColor: false,
+        barColor: '#f9243f'
+    });
+});

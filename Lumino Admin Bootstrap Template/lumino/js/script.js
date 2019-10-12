@@ -14,7 +14,7 @@ fetch('https://growby.app/slide',{
 .then(r => r.json())
 .then(data => {
 
-
+console.log(data);
     
 document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
     
