@@ -47,6 +47,7 @@ table, th, td {
 	clear: both;
 }
 .foreground {
+	margin: 20px 0;
 	height: 96vh; !important
 }
 .jumbotron {
