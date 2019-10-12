@@ -1,11 +1,26 @@
 
+Array.prototype.sum = function (prop) {
+    var total = 0
+    for ( var i = 0, _len = this.length; i < _len; i++ ) {
+        total += this[i][prop]
+    }
+    return total
+}
+
+
 fetch('https://growby.app/slide',{
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
     method: "POST"})
 .then(r => r.json())
 .then(data => {
 
- document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent','9');
+ document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
+    document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
+    
+
+
+    
+    
 
 data.forEach(el => {
 
