@@ -22,10 +22,10 @@
         <section id="feel">
             <h1>How do you feel?</h1>
             <div class="grid">
-                <a href="#"><img src="assets/img/awesome.jpg" alt="awesome" id="awsome""><h2>Awesome</h2></a>
-                <a href="#"><img src="assets/img/okay.jpeg" alt="okay" id="okey"><h2>Okay</h2></a>
-                <a href="#"><img src="assets/img/bad.jpg" alt="bad" id="bad"><h2>Bad</h2></a>
-                <a href="#"><img src="assets/img/verybad.jpg" alt="very bad" id="very bad"><h2>Very bad</h2></a>
+                <a href="#"><img src="assets/img/awesome.jpg" alt="awesome"><h2>Awesome</h2></a>
+                <a href="#"><img src="assets/img/okay.jpeg" alt="okay"><h2>Okay</h2></a>
+                <a href="#"><img src="assets/img/bad.jpg" alt="bad"><h2>Bad</h2></a>
+                <a href="#"><img src="assets/img/verybad.jpg" alt="very bad"><h2>Very bad</h2></a>
             </div>
         </section>
         <section id="form">
@@ -42,16 +42,16 @@
                     did something
                     <div class="custom-select">
                         <select name="mood" id="mood" required>
-                            <option value="" id="good/bad">good/bad</option>
-                            <option value="good" id="good">good</option>
-                            <option value="bad" id="bad">bad</option>
+                            <option value="">good/bad</option>
+                            <option value="good">good</option>
+                            <option value="bad">bad</option>
                         </select>
                     </div>
                     to <div class="custom-select">
                         <select name="target" id="target" required>
-                            <option value="" id="somebody">somebody</option>
-                            <option value="Liis" id="Liis">Liis</option>
-                            <option value="Tonu" id="Tõnu">Tõnu</option>
+                            <option value="">somebody</option>
+                            <option value="Liis">Liis</option>
+                            <option value="Tonu">Tõnu</option>
                         </select>
                     </div>
                     because
@@ -140,6 +140,42 @@
     /*if the user clicks anywhere outside the select box,
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
+    
+    
+    var feel;
+    var bullying;
+    var me;
+    var who;
+    var did;
+    var whom;
+    var why;
+    
+    
+    
+    function SendData(){
+    
+    
+   var data = {"feel":feel, "bullying":bullying, "me":me,"who": who, "did": did, "whom": whom, "why": why}
+    
+    
+    
+    
+    
+    
+fetch('https://growby.app/slide',{
+    headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
+    method: "POST",
+    body: JSON.stringify(data)});
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
 </script>
 
 </html>
