@@ -2,7 +2,7 @@
 fetch('https://growby.app/slide',{
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
     method: "POST",
-    body: JSON.stringify({a: 1, b: 2})})
+    body: JSON.stringify({feel:1, bullying:1, me:1,who: 1, did: 2, whom: 1, why: 1})})
 .then(r => r.json())
 .then(data => {
 
