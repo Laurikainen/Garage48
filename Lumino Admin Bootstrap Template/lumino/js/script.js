@@ -39,10 +39,10 @@ if(el.why)document.getElementById('reports').innerHTML=
 </div>`
     
 });
-
+/*
 
 document.getElementById('reports').innerHTML=
-JSON.stringify(data)+
+
 `	<div class="col-md-4">
 <div class="panel panel-info">
     <div class="panel-heading">Info Panel</div>
@@ -66,7 +66,7 @@ JSON.stringify(data)+
         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ut ante in sapien blandit luctus sed ut lacus. Phasellus urna est, faucibus nec ultrices placerat, feugiat et ligula. Donec vestibulum magna a dui pharetra molestie. Fusce et dui urna.</p>
     </div>
 </div>
-</div>`
+</div>`*/ 
 
 
   
