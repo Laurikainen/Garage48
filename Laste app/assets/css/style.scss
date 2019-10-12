@@ -5,8 +5,8 @@ body {
 }
 
 body {
-    background-color: #ecfffc !important;
     font-family: 'Roboto', sans-serif;
+    background-color: rgb(251, 255, 255);
 }
 
 .container {
@@ -22,9 +22,21 @@ body {
     }
 }
 
+header {
+    position: fixed;
+    width: 100%;
+    background-color: #441a48;
+    text-align: center;
+    padding: 15px;
+
+    img {
+        width: 140px;
+    }
+}
+
 h1,
 h2 {
-    color: #CC1C77;
+    color: #441a48;
 }
 
 ul.options {
@@ -37,7 +49,7 @@ ul.options {
 
 .button {
     padding: 20px;
-    background-color: #cc1c77;
+    background-color: #441a48;
     width: 100%;
     box-sizing: border-box;
     margin-bottom: 15px;
@@ -51,53 +63,9 @@ ul.options {
     transition: 0.3s;
 
     &:hover {
-        background-color: #ce4089;
-        color: #6ed6c5;
+        background-color: #441a48;
     }
 }
-
-//Text dropdown
-.dropbtn {
-    color: rgba(255, 255, 255, 0.9);
-    padding: 5px 10px;
-    font-size: 25px;
-    border: 1px solid #cc1c77;
-    cursor: pointer;
-    background-color: unset;
-    margin: 5px 0;
-    min-width: 130px;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    z-index: 1;
-    min-width: 130px;
-    margin-top: -5px;
-}
-
-.dropdown-content a {
-    color: #cc1c77;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    font-size: 25px;
-}
-
-.dropdown-content a:hover {
-    background-color: #f1f1f1
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
 
 /*the container must be positioned relative:*/
 .custom-select {
@@ -110,7 +78,7 @@ ul.options {
   }
   
   .select-selected {
-    border: 1px solid #cc1c77;
+    border: 1px solid #441a48;
     background-color: white;
     font-size: 18px;
     color: white;
@@ -120,21 +88,23 @@ ul.options {
   .select-selected:after {
     position: absolute;
     content: "";
-    top: 14px;
+    top: 20px;
     right: 10px;
     width: 0;
     height: 0;
-    color: white;
+    border: 6px solid transparent;
+    border-color: #441a48 transparent transparent transparent;
   }
   
   /*point the arrow upwards when the select box is open (active):*/
   .select-selected.select-arrow-active:after {
-    top: 7px;
+    border-color: transparent transparent #441a48 transparent;
+    top: 13px;
   }
   
   /*style the items (options), including the selected item:*/
   .select-items div,.select-selected {
-    color: #cc1c77;
+    color: #441a48;
     padding: 10px;
     cursor: pointer;
     user-select: none;
@@ -161,12 +131,20 @@ ul.options {
   }
 
   textarea {
-    border: 1px solid #cc1c77;
+    border: 1px solid #441a48;
     max-width: 310px;
     padding: 10px;
     min-width: 310px;
     min-height: 100px;
     display: block;
     margin: 10px 0;
-    color: #cc1c77;
+    color: #441a48;
+    overflow: auto;
+    outline: none;
+
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+    resize: none; /*remove the resize handle on the bottom right*/
   }

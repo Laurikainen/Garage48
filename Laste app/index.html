@@ -15,37 +15,46 @@
 </head>
 
 <body>
+    <header>
+        <img src="assets/img/logo.png" alt="awesome logo">
+    </header>
     <div class="container">
-        <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
-            <h1 class="text">I think that <br>
-                <div class="custom-select">
-                    <select name="actor" id="actor" required>
-                        <option value="">somebody</option>
-                        <option value="Rauno">Rauno</option>
-                        <option value="Liis">Liis</option>
-                        <option value="Tonu">Tõnu</option>
-                    </select>
-                </div>
-                did something
-                <div class="custom-select">
-                    <select name="mood" id="mood" required>
-                        <option value="">good/bad</option>
-                        <option value="good">good</option>
-                        <option value="bad">bad</option>
-                    </select>
-                </div>
-                to <div class="custom-select">
-                    <select name="target" id="target" required>
-                        <option value="">somebody</option>
-                        <option value="Liis">Liis</option>
-                        <option value="Tonu">Tõnu</option>
-                    </select>
-                </div>
-                because
-                <textarea name="comment" id="comments" placeholder="Describe the situation..." cols="30" rows="10"></textarea>
-            </h1>
-            <input class="button" type="submit" value="Report">
-        </form>
+        <section id="feel">
+
+        </section>
+        <section id="form">
+            <form action="https://www.hashemian.com/tools/form-post-tester.php" method="post">
+                <h3 class="text">I think that <br>
+                    <div class="custom-select">
+                        <select name="actor" id="actor" required>
+                            <option value="">somebody</option>
+                            <option value="Rauno">Rauno</option>
+                            <option value="Liis">Liis</option>
+                            <option value="Tonu">Tõnu</option>
+                        </select>
+                    </div>
+                    did something
+                    <div class="custom-select">
+                        <select name="mood" id="mood" required>
+                            <option value="">good/bad</option>
+                            <option value="good">good</option>
+                            <option value="bad">bad</option>
+                        </select>
+                    </div>
+                    to <div class="custom-select">
+                        <select name="target" id="target" required>
+                            <option value="">somebody</option>
+                            <option value="Liis">Liis</option>
+                            <option value="Tonu">Tõnu</option>
+                        </select>
+                    </div>
+                    because
+                    <textarea name="comment" id="comments" placeholder="Describe the situation..." cols="30"
+                        rows="10"></textarea>
+                </h3>
+                <input class="button" type="submit" value="Report">
+            </form>
+        </section>
     </div>
 </body>
 
