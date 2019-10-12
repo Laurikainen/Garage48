@@ -21,7 +21,7 @@ document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',d
     var me = [];
     
     data.forEach(el=> {me.push(el.me)})
-
+console.log(me);
     me = [...new Set(me)]
     
 var mes = {};
