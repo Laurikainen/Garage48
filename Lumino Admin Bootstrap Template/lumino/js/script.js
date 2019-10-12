@@ -5,7 +5,7 @@ fetch('https://growby.app/slide',{
 .then(r => r.json())
 .then(data => {
 
-    console.log(document.getElementsByClass('easypiechart')['data-percent']);
+    console.log(document.getElementsByClassName('easypiechart')['data-percent']);
 
 data.forEach(el => {
 
