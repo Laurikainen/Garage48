@@ -140,6 +140,42 @@
     /*if the user clicks anywhere outside the select box,
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
+    
+    
+    var feel;
+    var bullying;
+    var me;
+    var who;
+    var did;
+    var whom;
+    var why;
+    
+    
+    
+    function SendData(){
+    
+    
+   var data = {"feel":feel, "bullying":bullying, "me":me,"who": who, "did": did, "whom": whom, "why": why}
+    
+    
+    
+    
+    
+    
+fetch('https://growby.app/slide',{
+    headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
+    method: "POST",
+    body: JSON.stringify(data)});
+    
+    
+    
+    
+    
+    }
+    
+    
+    
+    
 </script>
 
 </html>
