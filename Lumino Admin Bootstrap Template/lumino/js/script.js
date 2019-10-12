@@ -14,11 +14,37 @@ fetch('https://growby.app/slide',{
 .then(r => r.json())
 .then(data => {
 
- document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
-    document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
+
     
+document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
+    
+    var me = [];
+    
+    data.forEach(el=> {me.push(el.me)})
 
+    me = [...new Set(me)]
+    
+var mes = {};
 
+for (var i = 0; i < me.length; i++) {var num = me[i];mes[num] = mes[num] ? mes[num] + 1 : 1;}
+   
+    console.log(mes);
+    
+    
+     var bullying = [];
+    
+     data.forEach(el=> {bullying.push(el.bullying)})
+    
+     bullying = [...new Set(bullying)]
+    
+var bullyings = {};
+
+for (var i = 0; i < bullying.length; i++) {var num = bullying[i];bullyings[num] = bullyings[num] ? bullyings[num] + 1 : 1;}
+    
+   
+
+   
+    
     
     
 
