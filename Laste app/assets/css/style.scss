@@ -9,10 +9,10 @@ body {
     background-color: rgb(251, 255, 255);
 }
 
-#feel {
+.grid-card {
     .grid {
         display: grid;
-        grid-template-columns: 150px 150px;
+        grid-template-columns: 120px 120px;
         grid-row: auto auto;
         grid-column-gap: 15px;
         grid-row-gap: 15px;
@@ -21,8 +21,8 @@ body {
             text-decoration: none;
             img {
                 border-radius: 10px;
-                height: 190px;
-                width: 150px;
+                height: 150px;
+                width: 120px;
                 object-fit: cover;
             }
 
@@ -31,9 +31,18 @@ body {
             }
         }
     }
+
+    &#havebeen {
+        .grid {
+            grid-template-columns: 120px 120px 120px;
+        }
+    }
 }
 
-#form {
+#witness,
+#form,
+#havebeen,
+#confirmation {
     display: none;
 }
 
@@ -44,6 +53,9 @@ body {
     top: 50%;
     transform: translate(50%, -50%);
     display: none;
+    margin-top: 55px;
+    height: 100%;
+    padding: 20px;
 
     .text {
         text-align: justify;
@@ -51,11 +63,10 @@ body {
 }
 
 header {
-    position: fixed;
     width: 100%;
     background-color: #441a48;
     text-align: center;
-    padding: 15px;
+    padding: 15px 0;
 
     img {
         width: 140px;
@@ -63,7 +74,8 @@ header {
 }
 
 h1,
-h2 {
+h2,
+h3 {
     color: #441a48;
 }
 

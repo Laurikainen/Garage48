@@ -19,13 +19,72 @@
         <img src="assets/img/logo.png" alt="awesome logo">
     </header>
     <div class="container">
-        <section id="feel">
+        <section id="feel" class="grid-card">
             <h1>How do you feel?</h1>
             <div class="grid">
-                <a href="#"><img src="assets/img/awesome.jpg" alt="awesome"><h2>Awesome</h2></a>
-                <a href="#"><img src="assets/img/okay.jpeg" alt="okay"><h2>Okay</h2></a>
-                <a href="#"><img src="assets/img/bad.jpg" alt="bad"><h2>Bad</h2></a>
-                <a href="#"><img src="assets/img/verybad.jpg" alt="very bad"><h2>Very bad</h2></a>
+                <a href="#" id="awesome"><img src="assets/img/awesome.jpg" alt="awesome">
+                    <h3>Awesome</h3>
+                </a>
+                <a href="#" id="okay"><img src="assets/img/okay.jpeg" alt="okay">
+                    <h3>Okay</h3>
+                </a>
+                <a href="#" id="bad"><img src="assets/img/bad.jpg" alt="bad">
+                    <h3>Bad</h3>
+                </a>
+                <a href="#" id="vBad"><img src="assets/img/verybad.jpg" alt="very bad">
+                    <h3>Very bad</h3>
+                </a>
+            </div>
+        </section>
+        <section id="witness" class="grid-card">
+            <h1>Have you witnessed bullying during the past 2 weeks?</h1>
+            <div class="grid">
+                <a href="#" id="noIdea"><img src="assets/img/awesome.jpg" alt="awesome">
+                    <h3>No idea what you are talking about</h3>
+                </a>
+                <a href="#" id="witnessed"><img src="assets/img/okay.jpeg" alt="okay">
+                    <h3>Witnessed something</h3>
+                </a>
+                <a href="#" id="happened"><img src="assets/img/bad.jpg" alt="bad">
+                    <h3>Yes, happened to me</h3>
+                </a>
+                <a href="#" id="iBullied"><img src="assets/img/verybad.jpg" alt="very bad">
+                    <h3>I'm afraid I bullied someone</h3>
+                </a>
+            </div>
+        </section>
+        <section id="havebeen" class="grid-card">
+            <h1>During the past 2 weeks, have you been...</h1>
+            <div class="grid">
+                <a href="#" id="nasty"><img src="assets/img/awesome.jpg" alt="awesome">
+                    <h3>No idea what you are talking about</h3>
+                </a>
+                <a href="#" id="left"><img src="assets/img/okay.jpeg" alt="okay">
+                    <h3>Witnessed something</h3>
+                </a>
+                <a href="#" id="tagged"><img src="assets/img/bad.jpg" alt="bad">
+                    <h3>Yes, happened to me</h3>
+                </a>
+                <a href="#" id="scammed"><img src="assets/img/verybad.jpg" alt="very bad">
+                    <h3>I'm afraid I bullied someone</h3>
+                </a>
+                <a href="#" id="disturbed"><img src="assets/img/bad.jpg" alt="bad">
+                    <h3>Yes, happened to me</h3>
+                </a>
+                <a href="#" id="safe"><img src="assets/img/verybad.jpg" alt="very bad">
+                    <h3>I'm afraid I bullied someone</h3>
+                </a>
+            </div>
+        </section>
+        <section id="confirmation" class="grid-card">
+            <h1>Would you like to share your experience?</h1>
+            <div class="grid">
+                <a href="#" id="yesPlease"><img src="assets/img/awesome.jpg" alt="awesome">
+                    <h3>Yes, please</h3>
+                </a>
+                <a href="#" id="noThanks"><img src="assets/img/okay.jpeg" alt="okay">
+                    <h3>No, thanks</h3>
+                </a>
             </div>
         </section>
         <section id="form">
@@ -65,6 +124,7 @@
 </body>
 
 <script src="assets/js/transition.js"></script>
+<script src="assets/js/script.js"></script>
 
 <script>
     var x, i, j, selElmnt, a, b, c;
@@ -140,8 +200,8 @@
     /*if the user clicks anywhere outside the select box,
     then close all select boxes:*/
     document.addEventListener("click", closeAllSelect);
-    
-    
+
+
     var feel;
     var bullying;
     var me;
@@ -149,33 +209,41 @@
     var did;
     var whom;
     var why;
-    
-    
-    
-    function SendData(){
-    
-    
-   var data = {"feel":feel, "bullying":bullying, "me":me,"who": who, "did": did, "whom": whom, "why": why}
-    
-    
-    
-    
-    
-    
-fetch('https://growby.app/slide',{
-    headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
-    method: "POST",
-    body: JSON.stringify(data)});
-    
-    
-    
-    
-    
+
+
+
+    function SendData() {
+
+
+        var data = {
+            "feel": feel,
+            "bullying": bullying,
+            "me": me,
+            "who": who,
+            "did": did,
+            "whom": whom,
+            "why": why
+        }
+
+
+
+
+
+
+        fetch('https://growby.app/slide', {
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            method: "POST",
+            body: JSON.stringify(data)
+        });
+
+
+
+
+
     }
-    
-    
-    
-    
 </script>
 
 </html>

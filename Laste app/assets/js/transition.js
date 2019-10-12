@@ -21,4 +21,25 @@ $(document).ready(function () {
     function newpage() {
         window.location = newLocation;
     }
+
+    $('#feel a').click(function() {
+        $('#feel').hide(300);
+        $('#witness').show(300);
+    })
+    $('#witness a').click(function() {
+        $('#witness').hide(300);
+        $('#havebeen').show(300);
+    })
+    $('#havebeen a').click(function() {
+        $('#havebeen').hide(300);
+        $('#confirmation').show(300);
+    })
+    $('#confirmation #yesPlease').click(function() {
+        $('#confirmation').hide(300);
+        $('#form').show(300);
+    })
+    $('#confirmation #noThanks').click(function() {
+        $('#confirmation').hide(300);
+        
+    })
 });
