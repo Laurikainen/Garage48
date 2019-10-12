@@ -14,14 +14,14 @@ fetch('https://growby.app/slide',{
 .then(r => r.json())
 .then(data => {
 
-
+console.log(data);
     
 document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.sum("feel")/data.length);
     
     var me = [];
     
     data.forEach(el=> {me.push(el.me)})
-console.log(me);
+
     me = [...new Set(me)]
     
 var mes = {};
