@@ -9,7 +9,7 @@ data.forEach(el => {
 
     
 
-if(el.why)document.getElementById('reports').innerHTML+=
+if(el.why)document.getElementById('reports').innerHTML=
 `	<div class="col-md-4">
 <div class="panel panel-info">
     <div class="panel-heading">Info Panel</div>
