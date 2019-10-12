@@ -1,5 +1,7 @@
 
-fetch('https://growby.app/slide')
+fetch('https://growby.app/slide',{
+    headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
+    method: "POST"})
 .then(r => r.json())
 .then(data => {
 
@@ -11,7 +13,7 @@ data.forEach(el => {
 
     
 
-if(el.why)document.getElementById('reports').innerHTML=
+if(el.why)document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
 <div class="panel panel-info">
     <div class="panel-heading">Info Panel</div>
