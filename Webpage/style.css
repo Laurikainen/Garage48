@@ -74,3 +74,10 @@ body {
 h4 {
 	text-align: center;
 }
+
+.middle {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%); 
+}
