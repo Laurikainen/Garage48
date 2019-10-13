@@ -16,7 +16,7 @@ fetch('https://growby.app/slide',{
 data = data.filter(value => value.feel);
 console.log(data);
     
-document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',22);
+document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',2);
 document.getElementsByClassName('percent')[0].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100)+'%';
 
    
