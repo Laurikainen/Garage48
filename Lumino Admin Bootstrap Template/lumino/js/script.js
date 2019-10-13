@@ -25,6 +25,9 @@ document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',d
     
     
     
+
+setTimeout(() => {
+	
     
     
 
@@ -50,6 +53,11 @@ if(el.why)document.getElementById('reports').innerHTML+=
 `
     
 });
+    
+    
+}, 1000);
+    
+    
 /*
 
 document.getElementById('reports').innerHTML=
