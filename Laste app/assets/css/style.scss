@@ -11,7 +11,6 @@ body {
 }
 
 .grid-card {
-    max-width: 450px;
     margin: 0 auto;
     h1,
     h2 {
@@ -24,6 +23,8 @@ body {
         grid-row: auto;
         grid-column-gap: 10px;
         grid-row-gap: 10px;
+        max-width: 320px;
+        margin: 0 auto;
 
         a {
             text-decoration: none;
@@ -44,6 +45,7 @@ body {
     &#havebeen {
         .grid {
             grid-template-columns: 1fr 1fr 1fr;
+            max-width: 450px;
         }
     }
 }
@@ -61,9 +63,12 @@ body {
     width: 100%;
     display: none;
 
-    .text {
-        text-align: justify;
+    #form {
         max-width: 332px;
+        margin: 15px auto;
+        .text {
+            text-align: justify;
+        }
     }
 }
 
