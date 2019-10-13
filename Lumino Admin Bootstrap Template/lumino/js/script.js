@@ -25,12 +25,15 @@ document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',d
     
     
     
+
+setTimeout(() => {
+	
     
     
 
 data.forEach(el => {
 
-    
+    console.log(el.why);
 
 if(el.why)document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
@@ -50,6 +53,11 @@ if(el.why)document.getElementById('reports').innerHTML+=
 `
     
 });
+    
+    
+}, 1000);
+    
+    
 /*
 
 document.getElementById('reports').innerHTML=
