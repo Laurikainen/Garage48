@@ -16,10 +16,10 @@ fetch('https://growby.app/slide',{
 data = data.filter(value => value.feel);
 console.log(data);
     
-	$('#easypiechart-blue').data('easyPieChart').update(2);
+	
 	
 document.getElementsByClassName('percent')[0].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100)+'%';
-
+$('.easypiechart')[0].data('easyPieChart').update(50);
    
     console.log(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100);
  
