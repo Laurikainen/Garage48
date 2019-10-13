@@ -20,7 +20,7 @@ document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',d
     
 
    
-    console.log(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0));
+    console.log(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100);
  
     
     
