@@ -40,6 +40,10 @@ $(document).ready(function () {
     })
     $('#confirmation #noThanks').click(function() {
         $('#confirmation').hide(300);
-        
+        $('#done').show(300);
+    })
+    $('#form #sendReport').click(function() {
+        $('#form').hide(300);
+        $('#done').show(300);
     })
 });

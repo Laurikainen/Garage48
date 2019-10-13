@@ -83,7 +83,7 @@
                 <a href="#" id="yesPlease"><img src="assets/img/yes.jpg" alt="yes">
                     <h3>Yes, please</h3>
                 </a>
-                <a href="#" id="noThanks"><img src="assets/img/no.jpg" alt="no">
+                <a href="#" id="noThanks" onclick="SendData();"><img src="assets/img/no.jpg" alt="no">
                     <h3>No, thanks</h3>
                 </a>
             </div>
@@ -91,8 +91,8 @@
         <section id="form">
             <form>
                 <h3 class="text">I think that <br>
-                    <input type="text" name="who" id="who" placeholder="somebody" required>
-                    did something
+                    <input type="text" name="who" id="who" placeholder="somebody" required> <br>
+                    did something <br>
                     <div class="custom-select">
                         <select name="mood" id="mood" required>
                             <option value="">good/bad</option>
@@ -105,8 +105,14 @@
                     <textarea name="comment" id="comments" placeholder="Describe the situation..." cols="30"
                         rows="10"></textarea>
                 </h3>
-                <input class="button" type="submit" value="Report" onclick="SendData();">
+                <input class="button" type="submit" value="Report" id="sendReport" onclick="SendData();">
             </form>
+        </section>
+        <section id="done" class="grid-card">
+            <h1>Woop! You're all done!</h1>
+            <h3>Thank you for your feedback!</h3>
+            <img style="width: 100%; max-width: 400px; border-radius: 10px;" src="assets/img/done.jpg" alt="done">
+            <button class="button" onclick="location.reload();">Fill a new report</button>
         </section>
     </div>
 </body>
@@ -190,22 +196,22 @@
 
     let feel, bullying, me, who, did, whom, why = 0;
 
-    $('#feel #awesome').click(function() {
+    $('#feel #awesome').click(function () {
         feel = 99;
     })
-    $('#feel #okay').click(function() {
+    $('#feel #okay').click(function () {
         feel = 66;
     })
-    $('#feel #bad').click(function() {
+    $('#feel #bad').click(function () {
         feel = 33;
     })
 
-    $('#witness a').click(function(event) {
+    $('#witness a').click(function (event) {
         bullying = $(this).attr('id');
         console.log(bullying);
     })
 
-    $('#havebeen a').click(function(event) {
+    $('#havebeen a').click(function (event) {
         me = $(this).attr('id');
         console.log(me);
     })

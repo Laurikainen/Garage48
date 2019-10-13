@@ -10,12 +10,13 @@ body {
 }
 
 .grid-card {
+    max-width: 332px;
     .grid {
         display: grid;
-        grid-template-columns: 120px 120px;
-        grid-row: auto auto;
-        grid-column-gap: 15px;
-        grid-row-gap: 15px;
+        grid-template-columns: 1fr 1fr;
+        grid-row: auto;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
 
         a {
             text-decoration: none;
@@ -26,15 +27,16 @@ body {
                 object-fit: cover;
             }
 
-            h2 {
-                margin: 0;
+            h3 {
+                margin: 0 auto;
+                max-width: 120px;
             }
         }
     }
 
     &#havebeen {
         .grid {
-            grid-template-columns: 120px 120px 120px;
+            grid-template-columns: 1fr 1fr 1fr;
         }
     }
 }
@@ -42,7 +44,8 @@ body {
 #witness,
 #form,
 #havebeen,
-#confirmation {
+#confirmation,
+#done {
     display: none;
 }
 
@@ -59,6 +62,7 @@ body {
 
     .text {
         text-align: justify;
+        max-width: 332px;
     }
 }
 
@@ -103,7 +107,7 @@ ul.options {
     transition: 0.3s;
 
     &:hover {
-        background-color: #441a48;
+        background-color: #6d3672;
     }
 }
 
@@ -129,7 +133,7 @@ ul.options {
 .select-selected:after {
     position: absolute;
     content: "";
-    top: 20px;
+    top: 18px;
     right: 10px;
     width: 0;
     height: 0;
@@ -140,7 +144,7 @@ ul.options {
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
     border-color: transparent transparent #441a48 transparent;
-    top: 13px;
+    top: 11px;
 }
 
 /*style the items (options), including the selected item:*/
