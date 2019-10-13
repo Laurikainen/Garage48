@@ -75,7 +75,7 @@ setTimeout(() => {
 
 data.forEach(el => {
 
-
+if(el.who){
 
 if(el.feel>60){	document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
@@ -114,7 +114,7 @@ if(el.feel<10){	document.getElementById('reports').innerHTML+=
     </div>
 </div>
 </div>
-`}
+`}}
 	
 
     
