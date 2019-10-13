@@ -17,7 +17,7 @@ data = data.filter(value => value.feel);
 console.log(data);
     
 document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100);
-document.getElementsByClassName('easypiechart')[0].firstChild.nodeValue=data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100+'%';
+document.getElementsByClassName('percent')[0].innerHTML=data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100+'%';
 
    
     console.log(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100);
