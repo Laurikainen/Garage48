@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    $('.container').fadeIn(750);
+    $('body').fadeIn(750);
     $(document).click(function (event) {
         event.preventDefault();
         newLocation = $(event.target).closest('a').attr('href');
@@ -13,7 +13,7 @@ $(document).ready(function () {
             else if (newLocation.startsWith('#')) {
 			}
 			else {
-                $('.container').fadeOut(250, newpage);
+                $('body').fadeOut(250, newpage);
             }
         }
     });
