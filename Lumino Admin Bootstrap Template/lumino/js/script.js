@@ -90,7 +90,7 @@ if(el.feel>60){	document.getElementById('reports').innerHTML=
 </div>
 `+document.getElementById('reports').innerHTML}
 
-if(el.feel<60){	document.getElementById('reports').innerHTML=
+if(el.feel<60&&el.feel>=10){	document.getElementById('reports').innerHTML=
 `	<div class="col-md-4">
 <div class="panel panel-warning">
     <div class="panel-heading">Student feels OK</div>
