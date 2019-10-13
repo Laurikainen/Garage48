@@ -7,11 +7,13 @@ body {
 
 body {
     font-family: 'Roboto', sans-serif;
-    background-color: rgb(251, 255, 255);
+    overflow: hidden;
 }
 
 .grid-card {
-    margin: 0 auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     h1,
     h2 {
         max-width: 300px;
@@ -25,19 +27,20 @@ body {
         grid-row-gap: 10px;
         max-width: 320px;
         margin: 0 auto;
+        padding: 10px;
 
         a {
             text-decoration: none;
             img {
                 border-radius: 10px;
-                height: 150px;
-                width: 120px;
+                height: 140px;
+                width: 100px;
                 object-fit: cover;
             }
 
             h3 {
                 margin: 0 auto;
-                max-width: 120px;
+                max-width: 100px;
             }
         }
     }
@@ -46,6 +49,7 @@ body {
         .grid {
             grid-template-columns: 1fr 1fr 1fr;
             max-width: 450px;
+            padding: 0;
         }
     }
 }
@@ -63,9 +67,11 @@ body {
     width: 100%;
     display: none;
 
-    #form {
+    #form,
+    #done {
         max-width: 332px;
         margin: 15px auto;
+        padding: 5px;
         .text {
             text-align: justify;
         }
@@ -131,7 +137,7 @@ ul.options {
 .select-selected {
     border: 1px solid #441a48;
     background-color: white;
-    font-size: 15px;
+    font-size: 13px;
     color: white;
 }
 
@@ -139,7 +145,7 @@ ul.options {
 .select-selected:after {
     position: absolute;
     content: "";
-    top: 18px;
+    top: 17px;
     right: 10px;
     width: 0;
     height: 0;
@@ -150,7 +156,7 @@ ul.options {
 /*point the arrow upwards when the select box is open (active):*/
 .select-selected.select-arrow-active:after {
     border-color: transparent transparent #441a48 transparent;
-    top: 11px;
+    top: 10px;
 }
 
 /*style the items (options), including the selected item:*/
@@ -160,7 +166,7 @@ ul.options {
     padding: 10px;
     cursor: pointer;
     user-select: none;
-    font-size: 15px;
+    font-size: 13px;
 }
 
 /*style items (options):*/
