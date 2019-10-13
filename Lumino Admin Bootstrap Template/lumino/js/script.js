@@ -77,7 +77,7 @@ data.forEach(el => {
 
 if(el.who){
 
-if(el.feel>60){	document.getElementById('reports').innerHTML+=
+if(el.feel>60){	document.getElementById('reports').innerHTML=
 `	<div class="col-md-4">
 <div class="panel panel-info">
     <div class="panel-heading">Student feels great</div>
@@ -88,9 +88,9 @@ if(el.feel>60){	document.getElementById('reports').innerHTML+=
     </div>
 </div>
 </div>
-`}
+`+document.getElementById('reports').innerHTML}
 
-if(el.feel<60){	document.getElementById('reports').innerHTML+=
+if(el.feel<60){	document.getElementById('reports').innerHTML=
 `	<div class="col-md-4">
 <div class="panel panel-warning">
     <div class="panel-heading">Student feels OK</div>
@@ -101,9 +101,9 @@ if(el.feel<60){	document.getElementById('reports').innerHTML+=
     </div>
 </div>
 </div>
-`}
+`+document.getElementById('reports').innerHTML}
 
-if(el.feel<10){	document.getElementById('reports').innerHTML+=
+if(el.feel<10){	document.getElementById('reports').innerHTML=
 `	<div class="col-md-4">
 <div class="panel panel-danger">
     <div class="panel-heading">Student feels bad</div>
@@ -114,7 +114,7 @@ if(el.feel<10){	document.getElementById('reports').innerHTML+=
     </div>
 </div>
 </div>
-`}}
+`+document.getElementById('reports').innerHTML}}
 	
 
     
