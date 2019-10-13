@@ -69,12 +69,13 @@ body {
 
     #form,
     #done {
-        max-width: 332px;
         margin: 15px auto;
+        max-width: 300px;
         padding: 5px;
         position: absolute;
         left: 50%;
         transform: translateX(-50%);
+        min-width: 250px;
         .text {
             text-align: justify;
         }
@@ -194,14 +195,14 @@ ul.options {
 
 textarea {
     border: 1px solid #441a48;
-    max-width: 310px;
     padding: 10px;
-    min-width: 310px;
+    width: 100%;
     min-height: 100px;
     display: block;
     margin: 10px 0;
     color: #441a48;
     overflow: auto;
+    box-sizing: border-box;
     outline: none;
 
     -webkit-box-shadow: none;
@@ -215,8 +216,9 @@ textarea {
 input {
     border: 1px solid #441a48;
     color: #441a48;
+    box-sizing: border-box;
     padding: 10px;
-    min-width: 310px;
+    width: 100%;
     margin: 10px 0;
     outline: none;
 }
