@@ -14,7 +14,7 @@
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
 </head>
 
-<body>
+<body id="particles-js">
     <header>
         <img src="assets/img/logo.png" alt="awesome logo">
     </header>
@@ -42,7 +42,7 @@
                 <a href="#" id="noIdea"><img src="assets/img/awesome.jpg" alt="awesome">
                     <h3>No idea what you are talking about</h3>
                 </a>
-                <a href="#" id="witnessed"><img src="assets/img/okay.jpeg" alt="okay">
+                <a href="#" id="witnessed"><img src="assets/img/witness.jpg" alt="witness">
                     <h3>Witnessed something</h3>
                 </a>
                 <a href="#" id="happened"><img src="assets/img/bad.jpg" alt="bad">
@@ -59,7 +59,7 @@
                 <a href="#" id="nasty"><img src="assets/img/awesome.jpg" alt="awesome">
                     <h3>Sent or told nasty things</h3>
                 </a>
-                <a href="#" id="left"><img src="assets/img/okay.jpeg" alt="okay">
+                <a href="#" id="left"><img src="assets/img/leftout.jpg" alt="left out">
                     <h3>Left out</h3>
                 </a>
                 <a href="#" id="tagged"><img src="assets/img/bad.jpg" alt="bad">
@@ -118,6 +118,7 @@
 </body>
 
 <script src="assets/js/transition.js"></script>
+<script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
 
 <script>
     var x, i, j, selElmnt, a, b, c;
@@ -195,6 +196,7 @@
     document.addEventListener("click", closeAllSelect);
 
     let feel, bullying, me, who, did, whom, why = 0;
+    let icon = 'assets/img/unicorn.png';
 
     $('#feel #awesome').click(function () {
         feel = 99;
@@ -204,6 +206,7 @@
     })
     $('#feel #bad').click(function () {
         feel = 33;
+        icon = 'assets/img/';
     })
 
     $('#witness a').click(function (event) {
@@ -237,5 +240,6 @@
         });
     }
 </script>
+<script src="assets/js/particles.js"></script>
 
 </html>
