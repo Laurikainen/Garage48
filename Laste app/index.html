@@ -208,18 +208,16 @@
     $('#feel #bad').click(function () {
         feel = 33;
     })
-    $('#feel #vbad').click(function () {
+    $('#feel #vBad').click(function () {
         feel = 1;
     })
 
     $('#witness a').click(function (event) {
         bullying = $(this).attr('id');
-        console.log(bullying);
     })
 
     $('#havebeen a').click(function (event) {
         me = $(this).attr('id');
-        console.log(me);
     })
 
     function SendData() {
@@ -233,6 +231,8 @@
             "whom": $('#whom').val(),
             "why": $('#comments').val()
         }
+
+        console.log(data);
         fetch('https://growby.app/slide', {
             headers: {
                 'Accept': 'application/json',
