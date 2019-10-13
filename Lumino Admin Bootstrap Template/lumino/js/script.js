@@ -7,6 +7,70 @@ Array.prototype.sum = function (prop) {
     return total
 }
 
+setInterval(() => {
+	
+
+
+fetch('https://growby.app/slide',{
+    headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
+    method: "POST"})
+.then(r => r.json())
+.then(data => {
+data = data.filter(value => value.feel);
+console.log(data);
+    
+	
+	
+document.getElementsByClassName('percent')[0].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100)+'%';
+$('#easypiechart-blue').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100);
+   
+document.getElementsByClassName('percent')[1].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 66);}, 0)/data.length*100)+'%';
+$('#easypiechart-orange').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 66);}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[2].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 33);}, 0)/data.length*100)+'%';
+$('#easypiechart-teal').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 33);}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[3].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 1);}, 0)/data.length*100)+'%';
+$('#easypiechart-red').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 1);}, 0)/data.length*100);
+	
+	
+	
+document.getElementsByClassName('percent')[4].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.bullying == 'noIdea');}, 0)/data.length*100)+'%';
+$('#easypiechart-blue2').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.bullying == 'noIdea');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[5].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.bullying == 'witnessed');}, 0)/data.length*100)+'%';
+$('#easypiechart-orange2').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.bullying == 'witnessed');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[6].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.bullying == 'happened');}, 0)/data.length*100)+'%';
+$('#easypiechart-teal2').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.bullying == 'happened');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[7].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.bullying == 'iBullied');}, 0)/data.length*100)+'%';
+$('#easypiechart-red2').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.bullying == 'iBullied');}, 0)/data.length*100);
+	
+	
+document.getElementsByClassName('percent')[8].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.me == 'nasty');}, 0)/data.length*100)+'%';
+$('#easypiechart-blue3').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.me == 'nasty');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[9].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100)+'%';
+$('#easypiechart-orange3').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[10].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.me == 'tagged');}, 0)/data.length*100)+'%';
+$('#easypiechart-teal3').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.me == 'tagged');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[11].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.me == 'scammed');}, 0)/data.length*100)+'%';
+$('#easypiechart-red3').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.me == 'scammed');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[12].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.me == 'disturbed');}, 0)/data.length*100)+'%';
+$('#easypiechart-blue4').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.me == 'disturbed');}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[13].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.me == 'safe');}, 0)/data.length*100)+'%';
+$('#easypiechart-orange4').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.me == 'safe');}, 0)/data.length*100);
+	
+ 
+    
+});}, 1000);
+
+
 
 fetch('https://growby.app/slide',{
     headers: {'Accept': 'application/json', 'Content-Type': 'application/json'},
