@@ -32,7 +32,10 @@ $('#easypiechart-red').data('easyPieChart').update(data.reduce(function (n, el) 
 	
 	
 	
-    console.log(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100);
+document.getElementsByClassName('percent')[4].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 1);}, 0)/data.length*100)+'%';
+$('#easypiechart-red').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 1);}, 0)/data.length*100);
+	
+    console.log(data.reduce(function (n, el) {return n + (el.bullying == 'onIdea');}, 0)/data.length*100);
  
     
     
