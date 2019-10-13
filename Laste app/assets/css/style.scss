@@ -13,6 +13,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    padding-top: 55px;
     h1,
     h2 {
         max-width: 300px;
@@ -72,7 +73,6 @@ body {
     text-align: center;
     width: 100%;
     display: none;
-    padding-top: 55px;
 
     #form,
     #done {
@@ -83,6 +83,7 @@ body {
         left: 50%;
         transform: translateX(-50%);
         min-width: 250px;
+        padding-top: 55px;
         .text {
             text-align: justify;
         }
