@@ -13,7 +13,7 @@ fetch('https://growby.app/slide',{
     method: "POST"})
 .then(r => r.json())
 .then(data => {
-data = data.filter(value => Object.keys(value).length !== 0);
+data = data.filter(value => value.feel);
 console.log(data);
     
 document.getElementsByClassName('easypiechart')[0].setAttribute('data-percent',data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100);
