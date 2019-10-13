@@ -72,6 +72,9 @@ body {
         max-width: 332px;
         margin: 15px auto;
         padding: 5px;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
         .text {
             text-align: justify;
         }
