@@ -75,12 +75,12 @@ setTimeout(() => {
 
 data.forEach(el => {
 
-
+if(el.who){
 
 if(el.feel>60){	document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
 <div class="panel panel-info">
-    <div class="panel-heading">Student report</div>
+    <div class="panel-heading">Student feels great</div>
     <div class="panel-body">
 
 <p>`+el.who+` did `+el.did+` to `+el.whom+` because `+el.why+`</p>
@@ -93,7 +93,7 @@ if(el.feel>60){	document.getElementById('reports').innerHTML+=
 if(el.feel<60){	document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
 <div class="panel panel-warning">
-    <div class="panel-heading">Student report</div>
+    <div class="panel-heading">Student feels OK</div>
     <div class="panel-body">
 
 <p>`+el.who+` did `+el.did+` to `+el.whom+` because `+el.why+`</p>
@@ -106,7 +106,7 @@ if(el.feel<60){	document.getElementById('reports').innerHTML+=
 if(el.feel<10){	document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
 <div class="panel panel-danger">
-    <div class="panel-heading">Student report</div>
+    <div class="panel-heading">Student feels bad</div>
     <div class="panel-body">
 
 <p>`+el.who+` did `+el.did+` to `+el.whom+` because `+el.why+`</p>
@@ -114,7 +114,7 @@ if(el.feel<10){	document.getElementById('reports').innerHTML+=
     </div>
 </div>
 </div>
-`}
+`}}
 	
 
     
