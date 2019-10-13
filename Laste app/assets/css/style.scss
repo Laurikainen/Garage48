@@ -36,11 +36,18 @@ body {
                 height: 140px;
                 width: 100px;
                 object-fit: cover;
+                transition: 0.3s;
             }
 
             h3 {
                 margin: 0 auto;
                 max-width: 100px;
+            }
+
+            &:hover {
+                img {
+                    box-shadow: black 0px 3px 10px;
+                }
             }
         }
     }
