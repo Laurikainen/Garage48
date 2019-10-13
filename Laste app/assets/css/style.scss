@@ -72,6 +72,7 @@ body {
     text-align: center;
     width: 100%;
     display: none;
+    padding-top: 55px;
 
     #form,
     #done {
@@ -93,6 +94,8 @@ header {
     background-color: #441a48;
     text-align: center;
     padding: 15px 0;
+    position: fixed;
+    z-index: 999;
 
     img {
         width: 140px;
@@ -228,5 +231,23 @@ input {
     margin: 10px 0;
     outline: none;
 }
+
+//Scrollbar
+::-webkit-scrollbar-thumb {
+    background-color: #441a48;
+    border-radius: 2px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #6d3672;
+  }
+
+  ::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
 
 @import 'partials/particles';

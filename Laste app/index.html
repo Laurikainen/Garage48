@@ -198,10 +198,12 @@
     document.addEventListener("click", closeAllSelect);
 
     let feel, bullying, me, who, did, whom, why = 0;
-    let icon = 'assets/img/unicorn.png';
+    let icon = 'assets/img/thinking.png';
+    $.getScript('assets/js/particles.js');
 
     $('#feel #awesome').click(function () {
         feel = 99;
+        icon = 'assets/img/unicorn.png';
         $.getScript('assets/js/particles.js');
     })
     $('#feel #okay').click(function () {
