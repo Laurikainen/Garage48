@@ -11,6 +11,11 @@ body {
 }
 
 .grid-card {
+    h1,
+    h2 {
+        max-width: 300px;
+        margin: 15px auto;
+    }
     .grid {
         display: grid;
         grid-template-columns: 1fr 1fr;

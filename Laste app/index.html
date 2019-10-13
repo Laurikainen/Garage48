@@ -201,15 +201,22 @@
 
     $('#feel #awesome').click(function () {
         feel = 99;
+        $.getScript('assets/js/particles.js');
     })
     $('#feel #okay').click(function () {
         feel = 66;
+        icon = 'assets/img/okay.png';
+        $.getScript('assets/js/particles.js');
     })
     $('#feel #bad').click(function () {
         feel = 33;
+        icon = 'assets/img/sad.png';
+        $.getScript('assets/js/particles.js');
     })
     $('#feel #vBad').click(function () {
         feel = 1;
+        icon = 'assets/img/vsad.png';
+        $.getScript('assets/js/particles.js');
     })
 
     $('#witness a').click(function (event) {
@@ -243,6 +250,5 @@
         });
     }
 </script>
-<script src="assets/js/particles.js"></script>
 
 </html>
