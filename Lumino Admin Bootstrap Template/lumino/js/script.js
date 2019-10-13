@@ -37,7 +37,13 @@ if(el.why)document.getElementById('reports').innerHTML+=
 <div class="panel panel-info">
     <div class="panel-heading">Info Panel</div>
     <div class="panel-body">
-        <p>`+el.why+`</p>
+        <p>`+el.feel+`</p>
+<p>`+el.bullying+`</p>
+<p>`+el.me+`</p>
+<p>`+el.who+`</p>
+<p>`+el.did+`</p>
+<p>`+el.whom+`</p>
+<p>`+el.why+`</p>
     </div>
 </div>
 </div>
