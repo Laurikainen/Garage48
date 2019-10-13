@@ -33,12 +33,12 @@ setTimeout(() => {
 
 data.forEach(el => {
 
-    console.log(el.why);
 
-if(el.why)document.getElementById('reports').innerHTML+=
+
+if(el.feel>60){	document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
 <div class="panel panel-info">
-    <div class="panel-heading">Info Panel</div>
+    <div class="panel-heading">Student report</div>
     <div class="panel-body">
         <p>`+el.feel+`</p>
 <p>`+el.bullying+`</p>
@@ -50,7 +50,43 @@ if(el.why)document.getElementById('reports').innerHTML+=
     </div>
 </div>
 </div>
-`
+`}
+
+if(el.feel<60){	document.getElementById('reports').innerHTML+=
+`	<div class="col-md-4">
+<div class="panel panel-warning">
+    <div class="panel-heading">Student report</div>
+    <div class="panel-body">
+        <p>`+el.feel+`</p>
+<p>`+el.bullying+`</p>
+<p>`+el.me+`</p>
+<p>`+el.who+`</p>
+<p>`+el.did+`</p>
+<p>`+el.whom+`</p>
+<p>`+el.why+`</p>
+    </div>
+</div>
+</div>
+`}
+
+if(el.feel<10){	document.getElementById('reports').innerHTML+=
+`	<div class="col-md-4">
+<div class="panel panel-danger">
+    <div class="panel-heading">Student report</div>
+    <div class="panel-body">
+        <p>`+el.feel+`</p>
+<p>`+el.bullying+`</p>
+<p>`+el.me+`</p>
+<p>`+el.who+`</p>
+<p>`+el.did+`</p>
+<p>`+el.whom+`</p>
+<p>`+el.why+`</p>
+    </div>
+</div>
+</div>
+`}
+	
+
     
 });
     
