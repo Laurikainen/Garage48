@@ -33,7 +33,7 @@ setTimeout(() => {
 
 data.forEach(el => {
 
-    
+    console.log(el.why);
 
 if(el.why)document.getElementById('reports').innerHTML+=
 `	<div class="col-md-4">
