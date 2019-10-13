@@ -21,6 +21,17 @@ console.log(data);
 document.getElementsByClassName('percent')[0].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100)+'%';
 $('#easypiechart-blue').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 99);}, 0)/data.length*100);
    
+document.getElementsByClassName('percent')[1].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 66);}, 0)/data.length*100)+'%';
+$('#easypiechart-orange').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 66);}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[2].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 33);}, 0)/data.length*100)+'%';
+$('#easypiechart-teal').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 33);}, 0)/data.length*100);
+	
+document.getElementsByClassName('percent')[3].innerHTML=Math.round(data.reduce(function (n, el) {return n + (el.feel == 1);}, 0)/data.length*100)+'%';
+$('#easypiechart-red').data('easyPieChart').update(data.reduce(function (n, el) {return n + (el.feel == 1);}, 0)/data.length*100);
+	
+	
+	
     console.log(data.reduce(function (n, el) {return n + (el.me == 'left');}, 0)/data.length*100);
  
     
